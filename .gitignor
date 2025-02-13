@@ -1,0 +1,5 @@
+pretrained_data/
+data_tokenizer/
+env/
+__pycache__/
+git/

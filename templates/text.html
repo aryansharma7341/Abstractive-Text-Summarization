@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization Tool</title>
+    <link rel="stylesheet" href="/static/text.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="dialog-box">
+                <h2 class="box-heading">Text Summarizer</h2>
+                <div class="input-container">
+
+                <form action="/getstarted" method="post" >
+
+                    <h3 class="input-heading">Entered Text</h3>
+                    <textarea id="inputText" class="input-text" name="inp_text" placeholder="Enter text to summarize..."></textarea>
+                    <button onclick="summarize()" class="summarize-button">Summarize</button>
+
+                </form>
+                <div class="summary-box" id="summary" style="display: none;">
+                    <div class="summary-dialog">
+                        <h2 class="summary-heading">Summarized Text</h2>
+                        <div id="summary-content" class="summary-content" style="color: aliceblue;"></div>
+                        <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+                    </div>
+                </div>
+                <div id="warning" class="warning" style="display: none;">Please enter text before summarizing.</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
